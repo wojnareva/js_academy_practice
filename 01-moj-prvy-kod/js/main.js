@@ -76,5 +76,39 @@ let cart = [
 // je to len sposob, ako si pekne vypisat hodnoty pocas toho, ako s nimi ako programator pracujem
 console.table(cart);
 
+// ukol 1
+console.log(movie.title);
+
+movie.year = 2022;
+movie.cast = ["Zdeněk Svěrák", "Ondřej Vetchý", "Eva Holubová"];
+
+console.log(movie);
 
 // 7| CYKLUS
+cart.forEach((book) => {
+	console.log(book.title);
+});
+
+let years = [2014, 2023, 2005];
+
+cart.forEach((book, index) => {
+	book.year = years[index];
+});
+
+console.table(cart);
+
+book = [{
+	title: "Silmarilion",
+	author: "J.R.R.Tolkien",
+	price: 365,
+	published: 1977
+},
+{
+	title: "Šikmý kostel",
+	author: "Karin Lednická",
+	price: 269,
+	published: 2020
+}
+];
+
+console.table(book);
