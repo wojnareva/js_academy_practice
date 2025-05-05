@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Webrebel 1: HTML, CSS & JavaScript",
+        "content": "Kompletní kurz webdesignu zahrnující HTML, CSS, responzivní design a JavaScript/jQuery. Naučíte se vytvářet moderní webové stránky od základů."
+    },
+    {
+        "title": "Git a GitHub základy",
+        "content": "Naučíte se nejdůležitější příkazy Git, práci s GitHubem a základy spolupráce na projektech. Kurz zahrnuje i mini rychlokurz Markdownu."
+    },
+    {
+        "title": "Základy programování a OOP",
+        "content": "Seznámíte se s principy programování, algoritmy a objektově orientovaným programováním. Kurz je plný úloh na procvičení a praktických příkladů."
+    },
+    {
+        "title": "CSS preprocesory: Sass",
+        "content": "Naučíte se používat Sass pro efektivnější psaní CSS. Kurz vám ukáže, jak využít proměnné, mixiny a další funkce pro přehlednější a rychlejší tvorbu stylů."
+    }
+]

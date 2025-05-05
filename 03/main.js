@@ -1,23 +1,45 @@
 // ---- MAIN PROGRAM
-let locale = 'cz';
-let subtotal = 124.55;
+// Funkce na vytvoření nové karty
+function createNewCard(title, content, placement = "end") {
+    const ul = document.querySelector(".card-list");
 
-subtotal = Number(subtotal.toFixed(2));
+    const li = document.createElement("li");
+    li.classList.add("new", "animate__animated", "animate__pulse");
 
-subtotal += 10;
-subtotal -=100;
+    const header3 = document.createElement("h3");
+    header3.textContent = title;
 
-if (locale == 'cz') {
-    subtotal = subtotal + ' Kč';subtotal = subtotal.replace('.', ',');
+    const paragraph = document.createElement("p");
+    paragraph.textContent = content;
+
+    li.append(header3, paragraph);
+
+    if (placement === "start") {
+        ul.prepend(li);
+    } else {
+        ul.append(li);
+    }
 }
-else if (locale == 'us'){
-    subtotal = '$'+subtotal;
-}
-else {
-    subtotal = subtotal + '€';
-};
 
-console.log(subtotal);
+document.addEventListener("DOMContentLoaded", function () {
+    const myForm = document.querySelector("form");
 
+    myForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // zruší reload
 
+        const title = this.querySelector(".title").value;
+        const content = this.querySelector(".content").value;
+        const placement = this.querySelector(".placement").value;
 
+        createNewCard(title, content, placement);
+        this.reset(); // vymaže formulář
+    });
+});
+
+fetch("./cards.json")
+    .then(response => response.json()) // převede odpověď na JS objekt
+    .then(data => {
+        data.forEach(item => {
+            createNewCard(item.title, item.content, "end");
+        });
+    })

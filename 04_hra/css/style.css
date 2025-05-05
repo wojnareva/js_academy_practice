@@ -126,7 +126,63 @@ main {
 pre {
 	text-align: left;
 }
+/*
+.formContainer {
+	background-color: #fff;
+	width: 30%;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+*/
+.formContainer {
+	background-color: #ffffffcc;
+	padding: 20px;
+	border-radius: 20px;
+	width: 90%;
+	max-width: 400px;
+	margin: 30px auto;
+	text-align: center;
+	box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+	border: 3px solid #e365be;
+  }
+  
+  .formHeader {
+	font-size: 1.5rem;
+	color: #D0189A;
+	position: static;
+	left: auto;
+	text-transform: uppercase;
+	margin: auto;
+  }
+  
+  .formContainer input[type="text"],
+  .formContainer input[type="file"] {
+	display: block;
+	color: #e365be;
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 10px;
+	border: 2px solid #00bcd4;
+	font-size: 1rem;
+  }
 
+  .formContainer input[type="submit"] {
+	background-color: #D0189A;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .formContainer input[type="submit"]:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px #e365be;
+  }
 
 
 /*

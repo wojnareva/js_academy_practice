@@ -10,8 +10,11 @@
 	<link rel="stylesheet" href="./css/app.css">
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/cards.css">
+	<link rel="stylesheet" href="./css/form.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script defer src="./main.js"></script>
 
-	<script defer src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -23,6 +26,7 @@
 	<main>
 		<section class="cards">
 			<ul class="card-list">
+<!--				
 				<li class="sdk">
 					<h3>Playdate SDK</h3>
 
@@ -50,9 +54,19 @@
 						import desktop fonts, kern and preview them.
 					</p>
 				</li>
-
+			-->
 			</ul>
 		</section>
+		<form id = "myForm">
+			<input class="title" placeholder="Název karty">
+			<input class="content" placeholder="Obsah karty">
+			<select class="placement">
+				<option value="end">Na konec</option>
+				<option value="start">Na začátek</option>
+
+			</select>
+			<button id="add" type="submit">Přidat kartu</button>
+		</form>
 	</main>
 
 </body>

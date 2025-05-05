@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Karta 1",
+    "content": "Text první karty",
+    "position": "start"
+  },
+  {
+    "title": "Karta 2",
+    "content": "Text druhé karty",
+    "position": "end"
+  }
+]
