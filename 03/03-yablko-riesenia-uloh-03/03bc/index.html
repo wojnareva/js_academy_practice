@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>03a a 03b</title>
+
+	<!-- pouzijem tieto animacie -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="./css/form.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/cards.css">
+
+	<script defer src="./js/main.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<img src="./images/header-playdate-dev.png" alt="anyone can make games">
+	</header>
+
+	<main>
+		<!-- formular, cez ktory vieme pridat novy card -->
+		<form action="">
+			<input type="text" name="title">
+			<input type="text" name="content">
+			<button type="submit">GO!</button>
+		</form>
+
+		<section class="cards">
+			<ul class="card-list">
+
+				<li class="sdk">
+					<h3>Playdate SDK</h3>
+
+					<p>
+						Our full development environment, available for Mac, PC, and Linux.
+						Includes Lua and C APIs, as well as a Simulator for
+						local development, with profiling and more.
+					</p>
+				</li>
+
+				<li class="inside">
+					<h3>Inside Playdate</h3>
+
+					<p>
+						Reference documentation for programming Playdate games.
+						Covers both
+						<a href="https://www.lua.org/home.html"><strong>Lua</strong></a>
+						and <strong>C</strong> programming.
+					</p>
+				</li>
+
+				<li class="caps">
+					<h3>Caps</h3>
+
+					<p>
+						Bitmap font editor for Playdate fonts—draw your own characters,
+						import desktop fonts, kern and preview them.
+					</p>
+				</li>
+
+			</ul>
+		</section>
+	</main>
+
+</body>
+
+</html>

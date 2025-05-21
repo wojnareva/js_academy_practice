@@ -1,4 +1,6 @@
 // ---- MAIN PROGRAM
+let a = 444;
+a = a + 44;
 // Funkce na vytvoření nové karty
 function createNewCard(title, content, placement = "end") {
     const ul = document.querySelector(".card-list");
